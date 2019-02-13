@@ -20,7 +20,7 @@ var timeFormat = moment().format("ddd, MM/DD/YYYY");
 
 //vars for taking in commands 
 let command = process.argv[2];
-let userSong = process.argv[3];
+let userSong = process.argv.slice(3).join(" ");
 let userMovie = process.argv.slice(3).join(" ");
 let userConcert = process.argv.slice(3).join(" ");
 
@@ -31,15 +31,11 @@ spotifySearch = ()=>{
         if (err) {
             return console.log('Error occurred: ' + err);
         }
-        //for (let i = 0; i < data.tracks.items.length; i++) {
+        
             console.log("Artist: " + data.tracks.items[0].artists[0].name)
             console.log("Track: " + data.tracks.items[0].name); 
             console.log("Preview URL: " + data.tracks.items[0].preview_url);
             console.log("Album: "+ data.tracks.items[0].album.name);
-            
-           
-        //}
-           
     });
 }
 
