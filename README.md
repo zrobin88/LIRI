@@ -2,6 +2,8 @@
 
 video demo: https://drive.google.com/file/d/1AKNpZmt0qy7tMXpemx9gGPOJpZksKLNb/view
 
+portfolio: https://zrobin88.github.io/updatedPortfolio/ 
+
 In order for this application to work, we need to install the following npm packages:
 
 - axios
